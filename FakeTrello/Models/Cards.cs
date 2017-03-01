@@ -14,5 +14,11 @@ namespace FakeTrello.Models
         public string Title { get; set; }
 
         public string Description { get; set; }
+
+        public int CardUserId { get; set; }
+
+        public int CardListId { get; set; }
+
+        public int CardBoardId { get; set; }
     }
 }

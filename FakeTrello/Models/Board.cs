@@ -14,5 +14,7 @@ namespace FakeTrello.Models
         public string Name { get; set; }
 
         public string URL { get; set; }
+
+        public int BoardUserId { get; set; }
     }
 }

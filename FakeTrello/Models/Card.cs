@@ -6,7 +6,7 @@ using System.Web;
 
 namespace FakeTrello.Models
 {
-    public class Cards
+    public class Card
     {
         [Key]
         public int CardId { get; set; }
@@ -15,10 +15,9 @@ namespace FakeTrello.Models
 
         public string Description { get; set; }
 
-        public int CardUserId { get; set; }
 
-        public int CardListId { get; set; }
-
-        public int CardBoardId { get; set; }
+        //Auxiliary: given a card instance,
+        // return the list it belongs to
+        public List BelongsTo { get; set; }
     }
 }

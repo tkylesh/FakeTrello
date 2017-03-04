@@ -15,6 +15,9 @@ namespace FakeTrello.Models
 
         public string URL { get; set; }
 
-        public int BoardUserId { get; set; }
+        //Auxillary(i.e. not required to derive/define relationship)
+        public TrelloUser BoardUserId { get; set; }
+
+        public List<List> Lists { get; set; }
     }
 }

@@ -13,8 +13,6 @@ namespace FakeTrello.Models
 
         public string Name { get; set; }
 
-        public int ListUserId { get; set; }
-
-        public int ListBoardId { get; set; }
+        public List<Card> Cards{ get; set; }
     }
 }

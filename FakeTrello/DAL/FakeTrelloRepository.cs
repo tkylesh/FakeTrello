@@ -8,6 +8,22 @@ namespace FakeTrello.DAL
 {
     public class FakeTrelloRepository : IRepository
     {
+
+        public FakeTrelloContext Context { get; set; } // Property
+        //private FakeTrelloContext context; // Data member
+
+        public FakeTrelloRepository()
+        {
+            Context = new FakeTrelloContext();
+        }
+
+        public FakeTrelloRepository(FakeTrelloContext context)
+        {
+            Context = context;
+        }
+
+        
+
         public void AddBoard(string name, ApplicationUser owner)
         {
             throw new NotImplementedException();
